@@ -40,14 +40,20 @@ The schema maintains referential integrity with:
 
 ---
 
-## 📊 Sample SQL Queries
+## 📈 Insights & Analysis
+- Sales Concentration: A few high-value customers contribute disproportionately to total sales.
+- Product Trends: Top products by quantity and revenue were identified using joins and aggregations.
+- Time Series: Seasonal patterns in sales were explored using month-wise groupings.
 
-### 🧾 Top 5 Selling Products
+## 🛠️ Technologies Used
+- SQLite: Database engine
+- DB Browser for SQLite: UI-based interaction
+- SQL: Data querying and aggregation
+- Markdown: Report formatting
+---
 
-```sql
-SELECT p.ProductName, SUM(od.Quantity) AS TotalSold
-FROM OrderDetails od
-JOIN Products p ON od.ProductID = p.ProductID
-GROUP BY p.ProductName
-ORDER BY TotalSold DESC
-LIMIT 5;
+## 🧠 Author  
+**Mohammed Saif Wasay**  
+*Data Analytics Graduate — Northeastern University*  
+*Machine Learning Enthusiast | Passionate about turning data into insights*  
+🔗 [Connect with me on LinkedIn](https://www.linkedin.com/in/mohammed-saif-wasay-4b3b64199/)
